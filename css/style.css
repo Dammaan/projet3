@@ -86,7 +86,7 @@ p {
     height: 79px;
 }
 
-.header-menu {
+.header-nav {
     width: 344px;
     height: 35px;
     display: flex;
@@ -95,34 +95,73 @@ p {
     align-items: flex-end;
 }
 
-.header-menu a:hover { 
+.header-nav a:hover { 
    color: var(--main-color);
    border-top: solid var(--main-color);
-/* Je n'arrive pas a décaler la bordure de quelques pixels haut dessus du texte */
+   padding-top: 14px;
 }
 
 .header img {
     height: 19px;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 /****** Research *****/
- .search {
+fieldset,
+button,
+input {
+  border: none;
+}
+
+.search-bar {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 377px;
-    height:49px;
-    margin: 35px 0px 35px 0px;
  } 
 
-
-.search i {
-    text-align: center;
-    width: 50px;
+ .search-bar fieldset {
     background-color: var(--main-bg-color);
-    color: var(--icon-alternative-color);
+    width: 268px;
  }
+
+ .search-bar input {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+  }
+  
+  .search-bar input::placeholder {
+    width: 100%;
+    font-weight: 700;
+    font-size: larger;
+    color: black;
+  }
+
+  .search-bar i:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    border-radius: 30px 0px 30px 0px;
+  }
+
+  .button-search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius:  0px 30px 30px 0px;
+    background-color: var(--main-color);
+    cursor: pointer;
+  }
+  
+
+
+
 
 
 /****** Filter *****/

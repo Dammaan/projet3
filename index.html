@@ -17,25 +17,36 @@
 
 <body>
     <div class="main-container">
+        <!-------------------------header------------------------->
         <header>
             <div class="header">
-                <img src="images/logo/Booki.png" alt="Logo de la marque Booki en bleu">
-                    <div class="header-menu">
+                <img src="images/logo/Booki.png" alt="Logo de la marque Booki">
+                    <div class="header-nav">
                         <a href="#herbergements">Hébergements</a>
                         <a href="#activités">Activités</a>
                     </div>
             </div>
+        </header>
+        <main>
+        <!-------------------------search------------------------->
             <section class="header-research">
                 <h2>Trouver votre hébergement pour des vancances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <div class="search">
-                    <form method="#" action="#">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">
-                        <input type="submit"  id="research" value="Rechercher">
-                        <!-- <input type="image">  pour afficher loupe sur mobile-->
+                    <form method="get" action="#">
+                        <fieldset>
+                            <label for="research">
+                                <i class="fa-solid fa-location-dot"></i>    
+                            </label>
+                            <input type="search" name="research" id="research" placeholder="Marseille, France" class="search-bar">
+                            <button type="submit" class="button-search-txt button-search-img">
+                                <span>Rechercher</span>
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                            </button>
+                        </fieldset>
                     </form>
                 </div>
+                <!-------------------------Filtres------------------------->
                 <div class="filter">
                     <h3>Filtres</h3>
                     <a href="#">
@@ -68,8 +79,7 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-        </header>
-        <main>
+                <!-------------------------Hébergements------------------------->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2 class="hebergements-title">Hébergements à Marseille</h2>
@@ -88,7 +98,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -107,7 +117,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div> 
                             </article>
@@ -126,7 +136,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>  
@@ -145,11 +155,12 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>  
-                        </a><a href="#">
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/reisetopia.jpg" alt="">
                                 <div class="card-content">
@@ -163,11 +174,12 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>  
-                        </a><a href="#">
+                        </a>
+                        <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/reisetopia.jpg" alt="">
                                 <div class="card-content">
@@ -190,13 +202,14 @@
                     <a href="#">
                         <h3>Afficher plus</h3>
                     </a>
-
                 </section>
+                <!-------------------------Populaires------------------------->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
+                    
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
@@ -256,8 +269,7 @@
                             </article>
                         </a>
                     </div>
-                </section>
-            </div>
+                    </section>
         </main>
         <footer></footer>
     </div>
