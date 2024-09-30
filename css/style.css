@@ -38,6 +38,11 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    size: 1rem;
+    font-weight: bold;
+}
+
 p {
     size: 1rem;
     font-weight: normal;
@@ -102,25 +107,68 @@ p {
 }
 
 /****** Research *****/
- /* .search {
+ .search {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 377px;
     height:49px;
- /* }  */ 
+    margin: 35px 0px 35px 0px;
+ } 
  /* besoin de la div ?  */
 
- .search i {
+.search i {
     text-align: center;
     width: 50px;
     background-color: var(--main-bg-color);
     color: var(--icon-alternative-color);
  }
 
- .search form {
+.search form {
     
  }
+
+/****** Filter *****/
+.filter{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+.button-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 19px 0px 19px;
+    border-radius: 30px;
+    border: #d9d9d9 solid 2px;
+ }
+
+ .button-filter:hover{
+    background-color: #DEEBFF;
+ }
+
+ .button-filter:active {
+    background-color: #DEEBFF;
+ }
+
+ .button-filter i {
+    margin-right: 10px;
+ }
+
+.information-filter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.information-filter i {
+    width: 4px;
+    border-radius:500px ;
+    border: #d9d9d9 solid 2px;
+    padding: 10px;
+    margin-right: 10px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -139,6 +187,8 @@ p {
 .hebergements {
     width: 65%;
 }
+
+
 
 /****** Populaires ***********/
 .populaires {
