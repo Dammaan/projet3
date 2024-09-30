@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -64,13 +65,30 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
-    height: 74px;
+    height: 79px;
 }
 
-.menu-header {
+.header-menu {
     width: 344px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
 }
+
+.header-menu a:hover { 
+   color: var(--main-color);
+   border-top: solid var(--main-color);
+
+}
+
+.header img {
+    height: 19px;
+    margin: 30px;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
