@@ -34,17 +34,17 @@ a {
 }
 
 h2 {
-    size: 1.375rem;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
 h3 {
-    size: 1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 p {
-    size: 1rem;
+    font-size: 1rem;
     font-weight: normal;
 
 }
@@ -115,7 +115,7 @@ p {
     height:49px;
     margin: 35px 0px 35px 0px;
  } 
- /* besoin de la div ?  */
+
 
 .search i {
     text-align: center;
@@ -124,9 +124,6 @@ p {
     color: var(--icon-alternative-color);
  }
 
-.search form {
-    
- }
 
 /****** Filter *****/
 .filter{
@@ -164,7 +161,7 @@ p {
 
 .information-filter i {
     width: 4px;
-    border-radius:500px ;
+    border-radius:50%  ;
     border: #d9d9d9 solid 2px;
     padding: 10px;
     margin-right: 10px;
@@ -188,6 +185,45 @@ p {
     width: 65%;
 }
 
+.hebergements-title {
+    margin-top: 0px;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; gap entre colonnes*/
+}
+
+.hebergements-cards .card{
+    width: 200px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+}
+
+.hebergements-cards .card-title {
+    margin-bottom: 8px;
+    /* écart de 16px au lieu de 8px je pense que c'est du a la taille de l'ecriture */
+}
+
+.herbergements-cards .card-subtitle {
+    margin-bottom: 8px;
+    /* ecart de16px au lieu de 8px je pense que c'est du a la taille de l'ecriture */
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 15px;
+
+}
 
 
 /****** Populaires ***********/
