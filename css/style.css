@@ -227,10 +227,11 @@ input {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards .card{
-    width: 200px;
+    width: 240px;
     
 
 }
@@ -318,8 +319,8 @@ input {
 }
 
  .activites .card {
-    width: 210px;
-    height: 439px ;
+    width: 298px;
+    height: 439px ; 
  }
 
  .activites-cards img{
@@ -327,6 +328,7 @@ input {
     height: 380px;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px ;
+    object-fit: cover;
  }
 
  .activites-cards .card-title{
