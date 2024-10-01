@@ -321,6 +321,7 @@ input {
  .activites .card {
     width: 298px;
     height: 439px ; 
+    padding: 0;
  }
 
  .activites-cards img{
@@ -328,7 +329,7 @@ input {
     height: 380px;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px ;
-    object-fit: cover;
+    
  }
 
  .activites-cards .card-title{
@@ -340,6 +341,26 @@ input {
     flex-direction: row;
     gap: 30px;
  }
+
+ /****** Footer ***********/
+.footer{
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 10px;
+    margin: 0px 0px 20px 20px;
+}
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
