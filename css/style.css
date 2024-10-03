@@ -194,7 +194,8 @@ input {
 }
 
 .information-filter i {
-    width: 4px;
+    width:4px;
+    height: 4px;
     border-radius:50%  ;
     border: #d9d9d9 solid 2px;
     padding: 10px;
