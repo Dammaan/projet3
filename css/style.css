@@ -137,7 +137,7 @@ input {
  }
 
  .search-bar input {
-    width: 230px;
+    width: 180px;
     border-top: var(--main-bg-color) 2px solid ;
     border-bottom: var(--main-bg-color) 2px solid ;
     text-align: center;
@@ -173,6 +173,7 @@ input {
   }
 
 /****** Filter *****/
+
 .filter{
     display: flex;
     flex-direction: row;
@@ -180,6 +181,14 @@ input {
     gap: 15px;
     margin-bottom: 30px;
 }
+
+.div-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
 .button-filter {
     display: flex;
     flex-direction: row;
@@ -196,6 +205,10 @@ input {
 
  .button-filter:active {
     background-color: #DEEBFF;
+ }
+
+ .button-filter-txt {
+    font-size: 18px;
  }
 
  .button-filter i {
@@ -236,21 +249,21 @@ input {
 /****** Hebergements ***********/
 .hebergements {
     flex-direction: column;
-    width: 65%;
+    width: 67%;
     gap: 30px;
 }
 
 .hebergements-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     gap: 30px;
     margin: 30px 0px 30px;
 }
 
 .hebergements-cards .card{
-    width: 240px;
+    width: 249px;
     
 
 }
@@ -267,19 +280,15 @@ input {
 }
 
 .hebergements-cards .card-title {
-    margin-bottom: 8px;
-    
-    /* écart de 16px au lieu de 8px je pense que c'est du a la taille de l'ecriture */
+    margin: 8px 0px 8px 0px;
 }
 
 .herbergements-cards .card-subtitle {
     margin-bottom: 8px;
-
-    /* ecart de16px au lieu de 8px je pense que c'est du a la taille de l'ecriture */
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 15px;
+    margin: 8px 0px 5px 0px
 
 }
 
@@ -353,7 +362,7 @@ input {
     
  }
 
- .activites-cards .card-title{
+ .activites-cards .activites-card-title{
     margin: 20px 19px;
  }
 
@@ -369,6 +378,7 @@ input {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
+    margin-top: 35px;
 }
 
 .footer-nav {
@@ -387,6 +397,22 @@ input {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .div-filter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0px 0px 0px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -407,7 +433,7 @@ input {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width:270px;
     }
 
     .populaires-cards .card-title {
@@ -454,6 +480,7 @@ input {
         display: flex;
         background-color: var(--main-bg-color);
         flex-direction: column;
+        
     }   
 
 }
