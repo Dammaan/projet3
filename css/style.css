@@ -29,6 +29,8 @@ main {
     padding: 0 50px;
     gap: 30px;
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -131,10 +133,6 @@ button,
 input {
   border: none;
 }
-
-.search-bar {
-    display: flex;   
- } 
 
  .search-bar fieldset {
     display: flex;
@@ -539,7 +537,8 @@ input {
     }
     /* je n'arrive pas à agrandir */
     .search-bar{
-     width: 100%;
+     width: 98%;
+     max-width: 580px;
     }
 
     .search-bar fieldset {
@@ -572,7 +571,7 @@ input {
     }
 
     .div-filter a{
-    min-width: calc(90%/2);
+    min-width: calc(95%/2);
     }
 
     .filter{
