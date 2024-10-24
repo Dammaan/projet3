@@ -567,6 +567,14 @@ input {
       }
 
     /****** Filter ***********/
+    .button-filter-txt{
+        font-size: 14px;
+    }
+
+    .div-filter a{
+    min-width: calc(90%/2);
+    }
+
     .filter{
         padding: 0 20px;
     }
