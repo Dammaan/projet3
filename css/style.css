@@ -14,23 +14,26 @@
 .fa-solid {
     color: var(--main-color);
 }
-
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     min-width: 320px;
+    max-width: 1440px;
+    
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    margin: 0 50px;
     gap: 30px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 a {
@@ -94,11 +97,14 @@ p {
 /****** Header *****/
 
 .header {
+    width: 94%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 59px;
     padding: 0 0 0 0;
+    margin-left: 50px;
+    max-width: 1440px;
 }
 
 .header-nav {
@@ -139,7 +145,7 @@ input {
 
  .search-bar fieldset {
     display: flex;
-    margin: 15px 0px 25px -10px;
+    margin: 40px 0px 25px -10px;
  }
 
  .search-bar input {
@@ -395,13 +401,14 @@ input {
 
  /****** Footer ***********/
 .footer{
-    padding: 0 50px;
+    padding: 0 10px;
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*width: 85%;*/
     margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .footer-nav {
@@ -409,7 +416,7 @@ input {
     flex-direction: column;
     width: 33%;
     gap: 10px;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 
@@ -499,7 +506,7 @@ input {
 @media (max-width: 767px) {
     /****** General ***********/
     main{
-        padding: 20px 0 0 0;
+        margin: 0;
         gap: 0;
     }
 
@@ -509,6 +516,8 @@ input {
         flex-direction: column;
         margin-bottom: 60px;
         padding: 0;
+        margin-left: 0;
+        width: 100%;
     
     }
     
@@ -546,8 +555,7 @@ input {
 
     .search-text {
         margin-left: 15px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        margin-bottom: 70px;
     }
 
     .search-bar{
@@ -665,6 +673,8 @@ input {
     .footer{
         padding: 0  0 0 20px;
         margin-top: 0;
+        margin-right: 50px;
+        margin-left: 0;
         flex-direction: column;  
         width: 100%;
     }  
